@@ -10,10 +10,10 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
-    })
+    }),
   );
 
-
   await app.listen(3000);
+  console.log(`App running on port ${3000}`);
 }
 bootstrap();
